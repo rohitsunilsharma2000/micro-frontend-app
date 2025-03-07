@@ -1,15 +1,24 @@
-import React, { Suspense } from "react";
+import React, { useState, Suspense } from "react";
+import VegetableList from "./components/VegetableList";
 
-// Dynamically import the remote component
-const RemoteButton = React.lazy(() => import("remote/Button"));
+const Cart = React.lazy(() => import("cart/Cart")); // ✅ Ensure correct import
 
-const App = () => (
-  <div>
-    <h1>Container App</h1>
-    <Suspense fallback={<div>Loading...</div>}>
-      <RemoteButton />
-    </Suspense>
-  </div>
-);
+const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItems((prev) => [...prev, item]);
+  };
+
+  return (
+    <div>
+      <h1>Container App</h1>
+      <VegetableList addToCart={addToCart} />
+      <Suspense fallback={<div>Loading Cart...</div>}>
+        <Cart cartItems={cartItems} />
+      </Suspense>
+    </div>
+  );
+};
 
 export default App;
