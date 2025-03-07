@@ -1,14 +1,12 @@
 
 
-### **📄 `README.md`**
-```markdown
 # 🛒 Micro Frontends with React & Webpack 5 Module Federation
 
 This project demonstrates **Micro Frontends (MFE)** using **React** and **Webpack 5 Module Federation**, where a **Container App** manages a **Cart Microfrontend** that allows users to add vegetables to a cart.
 
 ---
-
 ## 📌 **Project Structure**
+```markdown
 
 micro-frontend-app/
 │── container/         # Host app (Main shell)
