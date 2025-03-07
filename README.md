@@ -45,7 +45,7 @@ micro-frontend-app/
 ## 🛠 **Installation & Setup**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-repo/micro-frontend-react.git
+git clone https://github.com/rohitsunilsharma2000/micro-frontend-app.git
 cd micro-frontend-react
 ```
 
