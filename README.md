@@ -4,6 +4,8 @@
 
 This project demonstrates **Micro Frontends (MFE)** using **React** and **Webpack 5 Module Federation**, where a **Container App** manages a **Cart Microfrontend** that allows users to add vegetables to a cart.
 
+<img src="https://github.com/rohitsunilsharma2000/micro-frontend-app/blob/main/Micro%20Frontends.png"/>
+
 ---
 ## 📌 **Project Structure**
 ```markdown
